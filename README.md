@@ -1,5 +1,7 @@
 # joi-mongoose-indexes
 
+[![NPM](https://nodei.co/npm/joi-mongoose-indexes.png)](https://nodei.co/npm/joi-mongoose-indexes/)
+
 ## Introduction
 
 📕 Tiny library to validate indexed mongoose schemas using [Joi](https://github.com/hapijs/joi)
