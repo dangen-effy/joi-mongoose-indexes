@@ -1,17 +1,21 @@
 # joi-mongoose-indexes
 
+## Introduction
+
 📕 Tiny library to validate indexed mongoose schemas using [Joi](https://github.com/hapijs/joi)
+
 
 ## Example
 
 Write Joi schema.
+
 ```
 var getSchemaIndexEnum = require('joi-mongoose-indexes')
-var userSchema = require('../user')
+var user = require('./user')
 
 var getUserQuerySchema = Joi.object().keys({
   name: Joi.string().required(),
-  filter: Joi.string().valid(getSchemaIndexEnum(userSchema))  <===== usage
+  filter: Joi.string().valid(getSchemaIndexEnum(user.schema))  <===== usage
 })
 ```
 
@@ -34,3 +38,19 @@ var userSchema = new Schema({
 module.exports = mongoose.model('user', userSchema)
 ```
 
+Now you can try to validate indexed schemas.
+
+```
+var query = {
+  name: 'John',
+  filter: 'gender'
+}
+
+Joi.validate(query, getUserQuerySchema)
+```
+
+will throw an error
+
+```
+> ValidationError: child "filter" fails because ["filter" must be one of [name, phone, email]]
+```
