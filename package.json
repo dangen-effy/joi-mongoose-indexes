@@ -1,0 +1,25 @@
+{
+  "name": "joi-mongoose-indexes",
+  "version": "1.0.0",
+  "description": "Validate a field by indexed schema in Mongoose",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dangen-effy/joi-mongoose-indexes.git"
+  },
+  "keywords": [
+    "joi",
+    "mongoose",
+    "validate",
+    "index"
+  ],
+  "author": "Dangen Sohn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dangen-effy/joi-mongoose-indexes/issues"
+  },
+  "homepage": "https://github.com/dangen-effy/joi-mongoose-indexes#readme"
+}
