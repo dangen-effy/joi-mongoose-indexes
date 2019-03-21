@@ -6,7 +6,7 @@
 [![install size](https://packagephobia.now.sh/badge?p=joi-mongoose-indexes)](https://packagephobia.now.sh/result?p=joi-mongoose-indexes)
 ## Introduction
 
-📕 Tiny library to validate indexed mongoose schemas using [Joi](https://github.com/hapijs/joi)
+📕 Tiny library to validate indexed mongoose schema fields using [Joi](https://github.com/hapijs/joi)
 
 ## Example
 
